@@ -14,5 +14,7 @@ COPY . .
 # Сборка бинарника
 RUN GOOS=linux go build -o app ./cmd/server
 
+EXPOSE 8080
+
 CMD ["./app"]
 
